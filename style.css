@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+	color: #656060;
+
+}
+.header{
+    background-color: #ff3f4a;
+   
+}
+.header-left{
+    display: inline-block;
+}
+.header-left p{
+	font-size: 40px;
+	text-transform: uppercase;
+	color: white;
+}
+
+
+.header-menu {
+	display: inline-block;
+	margin: 0 180px;
+}
+.header-menu ul {
+	text-align: right;
+	
+}
+.header-menu ul li{
+	display: inline-block;
+    position: relative;
+
+	padding: 39px 0;
+}
+.header-menu ul li:hover{
+    background-color: #a60009;
+
+}
+.header-menu ul li a {
+	text-decoration: none;
+	margin: 0 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white
+}
+
+.header-menu ul li ul {
+	position: absolute;
+	margin-top: 38px;
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+    z-index: 3;
+}
+.header-menu ul li:hover .second-menu{
+    visibility: visible;
+    opacity:1;
+    transform: scaleY(1.1);
+    transform-origin: top center;
+}
+.header-menu ul li ul li {
+	
+	background: #ff3f4977;
+	width: 200px;
+	display: inline-block;
+	text-align: left;
+	border-bottom: 1px solid blue;
+    padding: 10px 0;
+}
+.header-menu ul li ul li a{
+    color: white;
+}
+/* banner */
+
+.banner{
+    background-image: url(./picture/background-01.jpg);
+    padding: 200px 0;
+    padding-bottom:200px ;
+    background-size: cover;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+
+}
+.banner:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 26, 26, 0.603);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner p:nth-child(1) {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.banner p:nth-child(2) {
+	width: 600px;
+	margin: 20px auto;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+.banner p:nth-child(3) {
+	color: white;
+	display: inline-block;
+	
+	padding: 15px 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 30px 30px;
+	background: #ff3f4a;
+    
+}
+.btn:hover{
+    color: blue;
+    background: yellow;
+}
+
+.banner p:nth-child(4) {
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	padding: 12px 45px;
+	margin: 0 30px;
+}
+/* card-section */
+.card-section{
+    text-align: center;
+    background-color: #a18888;
+    display: inline-block;
+
+}
+.card-size {
+	width: 28%;
+	display: inline-block;
+	background-color: rgb(252, 248, 248);
+	height: 285px;
+	margin: 33px;
+	position: relative;
+	bottom: 100px;
+	z-index: 4;
+}
+.underline {
+	height: 3px;
+	width: 89px;
+	background-color: red;
+	display: inline-block;
+	border-radius: 44px;
+	margin-bottom: 3px;
+}
+.card-size i {
+	font-size: 30px;
+	margin-top: 5px;
+	height: 50px;
+	width: 50px;
+	background: #ff3f4a;
+	border-radius: 50%;
+	line-height: 50px;
+	color: white;
+}
+.card-size h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+.card-size p {
+	width: 88%;
+	font-size: 20px;
+	margin: auto;
+}
+/* Transform */
+.card1{
+    transition: .5s;
+}
+.card1:hover{
+    transform: scale(1.1,1.1);
+
+}
+.card2{
+    transition: .5s;
+}
+.card2:hover{
+    transform: rotate(45deg);
+}
+.card3{
+    transition: .5s;
+}
+.card3:hover{
+    transform: skewY(20deg);
+}
+/* Info-div */
+.sub-info-size {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+
+	margin: 15px 15px;
+	height: 150px;
+	padding: 6px 0;
+}
+.info-div{
+	text-align: center;
+	margin-top: 50px;
+}
+.info-div h1{
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	position: relative;
+}
+.info-div h1::after {
+	content: "";
+	height: 5px;
+	width: 199px;
+	background-color: red;
+	position: absolute;
+	bottom: -29px;
+	right: 41%;
+	border-radius: 20px;
+}
+.sub-info-size {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	margin: 15px 15px;
+	height: 150px;
+	padding: 6px 0;
+}
+.sub-info-size i {
+	font-size: 45px;
+	margin-right: 15px;
+	transition: .4s;
+}
+.sub-info-size span {
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+	display: inline-block;
+}
+.sub-info-size p {
+	width: 83%;
+	margin: 0px auto;
+	font-size: 18px;
+	text-align: justify;
+	margin-left: 66px;
+}
+.sub-info-size:hover i{
+	color: red;
+}
+
+.btn {
+	background: #ff3f4a;
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 40px;
+	font-size: 20px;
+	margin: 20px 0;
+}
+/* picture-div */
+.picture-div{
+	background-color: #f4f4f4;
+	padding: 70px 0;
+	padding-top: 110px;
+	text-align: center;
+}
+
+.picture-div h1{
+	text-transform: uppercase;
+}
+.pic-div-size {
+	width: 21%;
+	height: 207px;
+	display: inline-block;
+	margin: 30px 22px;
+	text-align: center;
+}
+.pic-div-size img{
+	width: 100%;
+}
+.pic1{
+	transition: .5s;
+}
+.pic1:hover{
+	transform: scale(1.1,1.1);
+	
+}
+.pic2{
+	transition: .5s;
+}
+.pic2:hover{
+	transform: translateX(30px);
+}
+.pic3{
+	transition: .5s;
+}
+.pic3:hover{
+	transform: translateY(30px);
+}
+.pic4{
+	transition: .5s;
+}
+.pic4:hover{
+	transform: rotate(20deg);
+}
+.pic-div-size h2 {
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+/* introduce-div */
+.introduce-div{
+	text-align: center;
+	margin-top: 50px;
+	background-image: url(./picture/background-02.jpg);
+	padding: 100px 0;
+	position: relative;
+	z-index: 1;
+	background-size: cover;
+
+}
+.introduce-div:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(27, 25, 25, 0.692);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.introduce-div h1{
+	text-transform: uppercase;
+	color: white;
+}
+.introduce-div .p-left {
+	width: 45%;
+	display: inline-block;
+}
+.introduce-div .p-right {
+	display: inline-block;
+	width: 50%;
+}
+.introduce-div .p-left p{
+	width: 80%;
+background: red;
+color: white;
+padding: 35px 40px;
+border-radius: 20px;
+font-size: 18px;
+text-align: justify;
+margin: 50px 0;
+}
+.introduce-div .p-right p{
+	width: 80%;
+	background: red;
+	color: white;
+	padding: 35px 40px;
+	border-radius: 20px;
+	font-size: 18px;
+	text-align: justify;
+	margin: 50px 0;
+}
+.introduce-div .buyer1 {
+	display: inline-block;
+	margin-right: 600px;
+}
+.introduce-div .buyer1 img{
+	border-radius: 50%;
+}
+.introduce-div .buyer1 p{
+	color: white;
+}
+
+.introduce-div .buyer2 {
+	display: inline-block;
+	border-image-width: 34%;
+}
+.introduce-div .buyer2 img{
+	border-radius: 50%;
+}
+.introduce-div .buyer2 p{
+	color: white;
+}
+.margin{
+	display: inline-block;
+}
+/* services-div */
+.services-div{
+	text-align: center;
+}
+.services-div h1{
+	margin-top: 40px;
+}
+.pic-box {
+	width: 27%;
+	margin: 80px 20px;
+	display: inline-block;
+	text-align-last: left;
+}
+.pic-box h2 {
+	text-align: justify;
+	width: 90%;
+	margin-left: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	word-spacing: -5px;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.pic-box p {
+	margin: 20px 0;
+	text-align: justify;
+	margin-left: 10px;
+}
+.pic-box span {
+	background: red;
+	display: inline-block;
+	padding: 15px 30px;
+	color: white;
+	margin-left: 12px;
+	margin: 20px 0;
+}
+.first-pic img{
+	transition: .5s;
+}
+.first-pic img:hover{
+	transform: skew(-30deg);
+}
+.second-pic img{
+	transition: .5s;
+}
+.second-pic img:hover{
+transform: scale(1.2,1.2);
+}
+.third-pic img{
+	transition: .5s;
+}
+.third-pic img:hover{
+	transform: translateY(50px);
+}
+.footer{
+	text-align: center;
+	background-color: #222222;
+	padding: 130px 0;
+}
+.footer-sub {
+	width: 15%;
+	display: inline-block;
+	text-align:left;
+	margin: 10px 20px;
+}
+.footer-sub p:first-child {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.footer-sub p:last-child {
+	text-align: left;
+	margin: 10px 0;
+	line-height: 40px;
+	color: white;
+}
+.footer-sub ul {
+margin-left: 15px;
+}
+.footer-sub ul li {
+	line-height: 40px;
+}
+.footer-sub ul li a{
+	color: white;
+	text-decoration: none;
+	transition: .7s;
+}
+.footer-sub ul li a:hover{
+color: rgba(9, 107, 236, 0.979);
+}
+.copy{
+	background-color: rgb(61, 56, 88);
+}
+.copy p{
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 15px 0;
+}
